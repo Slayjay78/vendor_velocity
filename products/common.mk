@@ -26,6 +26,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     Launcher3 \
     Stk
+	
+# Common overlays
+PRODUCT_PACKAGE_OVERLAYS += vendor/omp/overlay	
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
