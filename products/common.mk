@@ -33,3 +33,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/omp/overlay
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
+
+# Inherit kitkat audio package.
+$(call inherit-product, vendor/omp/products/kitkataudio.mk)	
+	
