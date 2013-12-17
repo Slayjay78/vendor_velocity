@@ -36,4 +36,10 @@ PRODUCT_COPY_FILES += \
 
 # Inherit kitkat audio package.
 $(call inherit-product, vendor/omp/products/kitkataudio.mk)	
+
+# Bootanimation support
+ifneq ($(filter omp_mako omp_grouper,$(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES += \
+    vendor/omp/proprietary/system/media/768x1280-bootanimation.zip:system/media/bootanimation.zip
+endif
 	
