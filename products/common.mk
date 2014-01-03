@@ -38,7 +38,7 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, vendor/omp/products/kitkataudio.mk)	
 
 # Bootanimation support
-ifneq ($(filter omp_mako omp_grouper,$(TARGET_PRODUCT)),)
+ifneq ($(filter omp_mako omp_grouper omp_hammerhead,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
     vendor/omp/proprietary/system/media/768x1280-bootanimation.zip:system/media/bootanimation.zip
 endif
