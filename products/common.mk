@@ -42,4 +42,14 @@ ifneq ($(filter velocity_mako velocity_grouper,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
     vendor/velocity/proprietary/system/media/768x1280-bootanimation.zip:system/media/bootanimation.zip
 endif
+
+ifneq ($(filter velocity_hammerhead velocity_flo velocity_manta,$(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES += \
+    vendor/velocity/proprietary/system/media/1080x1920-bootanimation.zip:system/media/bootanimation.zip
+endif
+
+# Motox dalvik patch
+ifneq ($(filter velocity_flo velocity_hammerhead velocity_mako,$(TARGET_PRODUCT)),)
+$(call inherit-product, vendor/velocity/products/motoxdalvikpatch.mk)
+endif
 	
