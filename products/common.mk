@@ -1,6 +1,6 @@
 # Generic product
-PRODUCT_NAME := omp
-PRODUCT_BRAND := omp
+PRODUCT_NAME := velocity
+PRODUCT_BRAND := velocity
 PRODUCT_DEVICE := generic
 
 # Common overrides 
@@ -28,18 +28,18 @@ PRODUCT_PACKAGES += \
     Stk
 	
 # Common overlays
-PRODUCT_PACKAGE_OVERLAYS += vendor/omp/overlay	
+PRODUCT_PACKAGE_OVERLAYS += vendor/velocity/overlay	
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # Inherit kitkat audio package.
-$(call inherit-product, vendor/omp/products/kitkataudio.mk)	
+$(call inherit-product, vendor/velocity/products/kitkataudio.mk)	
 
 # Bootanimation support
-ifneq ($(filter omp_mako omp_grouper omp_hammerhead,$(TARGET_PRODUCT)),)
+ifneq ($(filter velocity_mako velocity_grouper,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
-    vendor/omp/proprietary/system/media/768x1280-bootanimation.zip:system/media/bootanimation.zip
+    vendor/velocity/proprietary/system/media/768x1280-bootanimation.zip:system/media/bootanimation.zip
 endif
 	

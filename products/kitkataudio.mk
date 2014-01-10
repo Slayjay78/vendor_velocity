@@ -1,6 +1,6 @@
 # Kitkat audio package
 
-LOCAL_PATH:= vendor/omp/proprietary/system/media/audio
+LOCAL_PATH:= vendor/velocity/proprietary/system/media/audio
 
 # Alarms
 PRODUCT_COPY_FILES += \

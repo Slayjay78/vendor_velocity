@@ -2,10 +2,10 @@
 $(call inherit-product, device/samsung/manta/full_manta.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/omp/products/common.mk)
+$(call inherit-product, vendor/velocity/products/common.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := omp_manta
+PRODUCT_NAME := velocity_manta
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := manta
 PRODUCT_MODEL := Nexus 10

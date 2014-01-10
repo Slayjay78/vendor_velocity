@@ -2,10 +2,10 @@
 $(call inherit-product, device/asus/grouper/full_grouper.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/omp/products/common.mk)
+$(call inherit-product, vendor/velocity/products/common.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := omp_grouper
+PRODUCT_NAME := velocity_grouper
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := grouper
 PRODUCT_MODEL := Nexus 7

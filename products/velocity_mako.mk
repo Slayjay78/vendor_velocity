@@ -2,10 +2,10 @@
 $(call inherit-product, device/lge/mako/full_mako.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/omp/products/common.mk)
+$(call inherit-product, vendor/velocity/products/common.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := omp_mako
+PRODUCT_NAME := velocity_mako
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := mako
 PRODUCT_MODEL := Nexus 4
