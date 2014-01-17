@@ -52,4 +52,9 @@ endif
 ifneq ($(filter velocity_flo velocity_hammerhead velocity_mako,$(TARGET_PRODUCT)),)
 $(call inherit-product, vendor/velocity/products/motoxdalvikpatch.mk)
 endif
+
+# Google latinime
+PRODUCT_COPY_FILES += \
+    vendor/velocity/proprietary/system/app/GoogleLatinIme.apk:system/app/GoogleLatinIme.apk \
+    vendor/velocity/proprietary/system/lib/libjni_unbundled_latinimegoogle.so:system/lib/libjni_unbundled_latinimegoogle.so
 	
