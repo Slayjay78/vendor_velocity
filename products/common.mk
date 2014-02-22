@@ -48,11 +48,6 @@ PRODUCT_COPY_FILES += \
     vendor/velocity/proprietary/system/media/1080x1920-bootanimation.zip:system/media/bootanimation.zip
 endif
 
-# Motox dalvik patch
-ifneq ($(filter velocity_flo velocity_hammerhead velocity_mako,$(TARGET_PRODUCT)),)
-$(call inherit-product, vendor/velocity/products/motoxdalvikpatch.mk)
-endif
-
 # Google latinime
 PRODUCT_COPY_FILES += \
     vendor/velocity/proprietary/system/app/GoogleLatinIme.apk:system/app/GoogleLatinIme.apk \
