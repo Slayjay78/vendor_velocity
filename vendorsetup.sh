@@ -1,5 +1,3 @@
 add_lunch_combo velocity_mako-user
 add_lunch_combo velocity_hammerhead-user
 add_lunch_combo velocity_flo-user
-add_lunch_combo velocity_manta-user
-add_lunch_combo velocity_grouper-user
