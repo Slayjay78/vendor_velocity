@@ -20,7 +20,21 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.gprsclass=12 \
     ro.ril.hsdpa.category=24 \
     ro.ril.hsupa.category=8 \
-    dalvik.vm.dexopt-flags=m=y
+    dalvik.vm.dexopt-flags=m=y \
+	ro.hwui.texture_cache_size=128 \
+    ro.hwui.layer_cache_size=84 \
+    ro.hwui.r_buffer_cache_size=16 \
+    ro.hwui.path_cache_size=64 \
+    ro.hwui.gradient_cache_size=1 \
+    ro.hwui.drop_shadow_cache_size=12 \
+	ro.hwui.texture_cache_flushrate=0.1 \
+	ro.ril.power_collapse=1 \
+	pm.sleep_mode=1 \
+	wifi.supplicant_scan_interval=300 \
+	windowsmgr.max_events_per_sec=90 \
+	touch.presure.scale=.001 \
+	ro.min.fling_velocity=8000 \
+	ro.max.fling_velocity=12000
 
 # Needed packages
 PRODUCT_PACKAGES += \
