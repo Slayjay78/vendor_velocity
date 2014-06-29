@@ -39,7 +39,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Needed packages
 PRODUCT_PACKAGES += \
     Launcher3 \
-    Stk
+    Stk \
+    Lightbulb
 	
 # Common overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/velocity/overlay	
